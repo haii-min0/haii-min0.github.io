@@ -997,7 +997,7 @@
 <figure class="highlight js"><table><tr><td class="code"><pre><code class="hljs js"><span class="hljs-comment">// 상태 갱신 후 생성된 HTML을 검사합니다.</span><br>it(<span class="hljs-string">&#x27;updates the rendered message when vm.message updates&#x27;</span>, <span class="hljs-function"><span class="hljs-params">done</span> =&gt;</span> &#123;<br>  <span class="hljs-keyword">const</span> vm = <span class="hljs-keyword">new</span> Vue(MyComponent).$mount()<br>  vm.message = <span class="hljs-string">&#x27;foo&#x27;</span><br><br>  <span class="hljs-comment">// DOM 변경을 검사하기 전에 상태가 변경된 후 &quot;tick&quot;을 기다립니다.</span><br>  Vue.nextTick(<span class="hljs-function">() =&gt;</span> &#123;<br>    expect(vm.$el.textContent).toBe(<span class="hljs-string">&#x27;foo&#x27;</span>)<br>    done()<br>  &#125;)<br>&#125;)<br></code></pre></td></tr></table></figure>
 
 <p>우리는 다른 제약 조건 (예: 자식 컴포넌트를 무시하는 얕은 렌더링)을 사용하여 컴포넌트를 렌더링 하는 것이 훨씬 간단하고 결과를 나타낼 수 있는 공통 테스트 모음을 개발할 계획 입니다.</p>
-<p>Vue의 유닛 테스트에 관한 상세 정보는 <a target="_blank" rel="noopener" href="https://vue-test-utils.vuejs.org/">Vue Test Utils</a> 와 쿡북 엔트리 <a href="https://vuejs.org/v2/cookbook/unit-testing-vue-components.html">unit testing vue components</a>를 확인해주세요.</p>
+<p>Vue의 유닛 테스트에 관한 상세 정보는 <a target="_blank" rel="noopener" href="https://vue-test-utils.vuejs.org/">Vue Test Utils</a> 와 쿡북 엔트리 <a target="_blank" rel="noopener" href="https://vuejs.org/v2/cookbook/unit-testing-vue-components.html">unit testing vue components</a>를 확인해주세요.</p>
 
   
   
